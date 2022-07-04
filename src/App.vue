@@ -1,18 +1,16 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <comp-nav-bar></comp-nav-bar>
+    <comp-to-dos></comp-to-dos>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import CompNavBar from './components/CompNavBar';
+import CompToDos from './components/CompToDos';
 export default {
   name: 'App',
-  components: {
-    HelloWorld
-  }
+  components: {CompToDos, CompNavBar}
 }
 </script>
 
@@ -21,8 +19,11 @@ export default {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
+  background: rgb(210, 210, 210);
   color: #2c3e50;
-  margin-top: 60px;
+  margin: 20px auto;
+  padding:5px;
+  widows: 90%;
+  max-width: 800px;
 }
 </style>
